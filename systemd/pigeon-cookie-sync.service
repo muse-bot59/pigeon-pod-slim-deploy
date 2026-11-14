@@ -1,0 +1,8 @@
+[Unit]
+Description=Refresh YouTube cookie from trusted host and sync to pigeon-pod
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/pigeon-cookie-sync.sh
+User=root
